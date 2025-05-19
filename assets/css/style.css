@@ -1,0 +1,310 @@
+/* ===== variables y modo claro/oscuro =================== */
+:root{
+  --bg:#ffffff;
+  --fg:#1f2937;
+  --accent:#6366f1;
+  --header:#f9fafb;
+
+  --step-0:clamp(1rem,0.85rem+0.7vw,1.25rem);
+  --step-1:clamp(1.5rem,1.2rem+1vw,2.25rem);
+}
+[data-theme="dark"]{
+  --bg:#111827;
+  --fg:#f3f4f6;
+  --accent:#8b5cf6;
+  --header:#1f2937;
+}
+*{box-sizing:border-box;margin:0;}
+body{
+  font-family:"Inter",sans-serif;
+  background:var(--bg);
+  color:var(--fg);
+  font-size:var(--step-0);
+  line-height:1.6;
+  padding:0 1rem;
+}
+h1,h2{font-size:var(--step-1);}
+
+/* ===== cabecera y nav =================================== */
+.site-header{
+  background:var(--header);
+  padding:1rem 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+}
+.site-title a{
+  text-decoration:none;
+  color:var(--accent);
+  font-weight:700;
+  font-size:1.5rem;
+}
+.site-nav ul{
+  list-style:none;
+  display:flex;
+  gap:1rem;
+}
+.site-nav a{
+  text-decoration:none;
+  color:var(--fg);
+  font-weight:500;
+  padding:.25rem .5rem;
+  border-radius:.5rem;
+  transition:background .2s ease;
+}
+.site-nav a:hover{
+  background:var(--accent);
+  color:var(--bg);
+}
+#themeToggle,.nav-toggle{
+  background:none;
+  border:0;
+  font-size:1.4rem;
+  cursor:pointer;
+}
+
+/* ===== menú colapsable en móviles ======================= */
+.nav-toggle{display:none;}
+@media(max-width:48rem){
+  .site-header{flex-direction:column;align-items:flex-start;}
+  .nav-toggle{display:block;}
+  #navList{
+    display:none;
+    flex-direction:column;
+    gap:.5rem;
+    width:100%;
+  }
+  #navList.open{display:flex;}
+}
+
+/* ===== contenido principal ============================== */
+.site-main{max-width:70rem;margin:auto;}
+
+/* ========================================================= */
+/* ===  SECCIÓN · PRÓLOGO EN TARJETA                     === */
+/* ========================================================= */
+.prologue{
+  margin-top:1.5rem;
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+}
+.prologue-block{
+  background:var(--header);
+  padding:1.5rem;
+  border-radius:1rem;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+}
+.prologue-block h2{margin-bottom:1rem;}
+.prologue-block ol{
+  padding-left:1.25rem;
+  display:flex;
+  flex-direction:column;
+  gap:.5rem;
+}
+
+/* ===== perfiles (grid vertical) ========================= */
+.profiles{
+  margin-top:1.5rem;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));
+  gap:1.5rem;
+}
+.profile-card{
+  background:var(--header);
+  padding:1.25rem;
+  border-radius:1rem;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+}
+.profile-card img{
+  width:120px;
+  aspect-ratio:1/1;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:1rem;
+}
+.profile-card p{margin-bottom:1rem;}
+.profile-card a{
+  text-decoration:none;
+  font-weight:600;
+  color:var(--accent);
+}
+
+/* ===== bloque de tarjetas horizontales en Prólogo ======= */
+.people-row{
+  margin-top:1.5rem;
+  display:flex;
+  flex-wrap:wrap;
+  gap:1.5rem;
+}
+.person-card{
+  flex:1 1 200px;
+  background:var(--header);
+  padding:1.5rem;
+  border-radius:1rem;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:background .2s ease;
+}
+.person-card a{
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  transition:color .2s ease;
+}
+.person-card:hover{
+  background:var(--accent);
+}
+.person-card:hover a{
+  color:var(--bg);
+}
+
+/* ===== galería de imágenes ============================== */
+.gallery{
+  margin-top:1.5rem;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));
+  gap:.75rem;
+}
+.gallery img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:.75rem;
+  object-fit:cover;
+}
+
+/* ===== PDF / CONTAINER ================================== */
+.pdf-container{margin-top:1.5rem;}
+.pdf-container object,
+.pdf-container iframe{
+  width:100%;
+  height:650px;
+  border:0;
+  border-radius:1rem;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+}
+
+/* ===== tarjetas de recomendación ======================== */
+.recommendations{
+  margin-top:1.5rem;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));
+  gap:1.5rem;
+}
+.rec-card{
+  background:var(--header);
+  padding:1.25rem;
+  border-radius:1rem;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.rec-card img{
+  width:100%;
+  border-radius:.75rem;
+  margin-bottom:1rem;
+  object-fit:cover;
+}
+.rec-card p{text-align:center;}
+
+/* ===== tarjetas de vídeo ================================ */
+.videos{
+  margin-top:1.5rem;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));
+  gap:1.5rem;
+}
+.video-card{
+  background:var(--header);
+  padding:1.25rem;
+  border-radius:1rem;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+}
+.video-card iframe{
+  width:100%;
+  aspect-ratio:16/9;
+  border:0;
+  border-radius:.75rem;
+}
+
+/* ========================================================= */
+/* ===  NUEVO · BLOQUES DE PERSONAJE (layout persona)    === */
+/* ========================================================= */
+.character{
+  margin-top:1.5rem;
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+}
+.character-block{
+  background:var(--header);
+  padding:1.5rem;
+  border-radius:1rem;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+}
+.character-block h1{
+  margin-bottom:.75rem;
+  font-size:2rem;
+}
+.character-block blockquote{font-style:italic;}
+.character-block.link a{
+  text-decoration:none;
+  font-weight:700;
+  color:var(--accent);
+}
+.character-block.link a:hover{
+  color:var(--bg);
+  background:var(--accent);
+  padding:.5rem 1rem;
+  border-radius:.5rem;
+  transition:background .2s ease,color .2s ease;
+}
+
+/* ===== pie de página ==================================== */
+.site-footer{
+  text-align:center;
+  margin:2rem 0;
+  font-size:.875rem;
+  color:var(--fg);
+}
+
+/* ========================================================= */
+/* ===  LIGHT-BOX (imagen ampliada)                       === */
+/* ========================================================= */
+.lightbox-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.8);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:1000;
+  opacity:0;
+  visibility:hidden;
+  transition:opacity .25s ease;
+}
+.lightbox-overlay.open{
+  opacity:1;
+  visibility:visible;
+}
+.lightbox-overlay img{
+  max-width:90vw;
+  max-height:90vh;
+  border-radius:1rem;
+  box-shadow:0 4px 14px rgba(0,0,0,.4);
+  cursor:zoom-out;
+}
