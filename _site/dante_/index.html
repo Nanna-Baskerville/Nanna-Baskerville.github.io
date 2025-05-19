@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Dante – Crónicas Aquerianas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav">
+  <!-- botón hamburguesa (solo se muestra en móviles) -->
+  <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">☰</button>
+
+  <ul id="navList">
+    
+      <li><a href="/prologo/">Prólogo</a></li>
+    
+      <li><a href="/perfiles/">Perfiles</a></li>
+    
+      <li><a href="/galeria/">Galería</a></li>
+    
+      <li><a href="/extras/">Extras</a></li>
+    
+  </ul>
+
+  <!-- interruptor claro/oscuro -->
+  <button id="themeToggle" aria-label="Cambiar tema">Tema: 🌓</button>
+</nav>
+
+<script>
+  // menú responsive
+  document.getElementById('navToggle')
+          .addEventListener('click', () =>
+             document.getElementById('navList').classList.toggle('open'));
+  // claro / oscuro persistente
+  const html = document.documentElement;
+  const saved = localStorage.getItem('theme');
+  if (saved) html.dataset.theme = saved;
+  document.getElementById('themeToggle').onclick = () => {
+    html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', html.dataset.theme);
+  };
+</script>
+
+    </header>
+
+    <main class="site-main">
+      <section class="character dante_">
+  <!-- Bloque 1 · título + frase -->
+  <div class="character-block name">
+    <h1>Dante</h1>
+    
+      <blockquote>la culpa expande sus raíces en silencio.</blockquote>
+    
+  </div>
+
+  <!-- Bloque 2 · texto (cuerpo en Markdown o include) -->
+  <div class="character-block text">
+    <p>Hace tiempo que Dante no dormía una noche completa, desde que regresó de la guerra sus
+sueños estaban plagados de recuerdos de cuerpos desmembrados, explosiones y gritos que se
+mezclaban con el suyo al despertar.</p>
+
+<p>La primera vez que entró a los Registros Aquerianos fue casi por accidente, soñaba que caminaba
+por el largo pasillo del refugio antibombas, al fondo una puerta aparecía marcada con el conocido
+emblema militar que había llevado en su uniforme. La abrió con temor, previendo lo que
+encontraría al otro lado, sin embargo, lo sorprendió una sala con una escalera de caracol en el
+centro y muchas puertas que se abrían a los lados, cuyas paredes aparecían cubiertas de retratos,
+emprendió el ascenso hasta fijarse en uno de ellos.</p>
+
+<p>Una niña con trenzas que no tendría más de 8 años le devolvió la mirada desde la pintura, una
+niña que recordaba bien, cuyo cuerpo había encontrado en los restos de un granero al que habían
+bombardeado tras escuchar que servía de refugió a terroristas. A su lado otro retrato
+representaba un hombre mayor con las manos levantadas pidiendo piedad y más allá una mujer
+mirando con horror al vacío. Continuó observando más y más rostros conocidos, todos muertos enla guerra, la mayoría culpables únicamente de encontrarse en el lugar equivocado. Dante cerró los
+ojos y rogó despertar, pero no parecía posible, desesperado continuó subiendo, intentando no
+mirar las paredes, finalmente se detuvo frente a una puerta, su propio retrato lo miraba desde un
+lado “Asesino de inocentes” rezaba la placa de bronce debajo de la imagen.</p>
+
+<p>Desde ese momento todas las noches Dante vagaba por la biblioteca, entraba directamente por
+alguna puerta, evitando ver los retratos, las salas repletas de libros le parecían apenas mejores
+que los sueños constantes sobre la guerra y el papel de bordes dorados donde se encontraban “las
+reglas” se la antojaba un invento más de su imaginación traumatizada, seguía sin embargo el
+camino marcado por los retratos de los paisajes de la posguerra.</p>
+
+<p>Una de esas noches el camino lo llevó a una sala casi vacía donde un libro llamado “Memorias de
+viejos errores” llamó su atención, sus páginas mostraban escenas de la guerra, pero borrosas, casi
+indistinguibles “los errores se reescriben, no se lamentan” aparecía manuscrito al pie de cada una
+de ellas. Dejando el libro a un lado cruzo la única puerta que había enfrente “sala de las sombras”
+rezaba una placa sobre una de las paredes justo debajo de un lienzo en blanco. En el centro un
+libro llamado “tomo del olvido” yacía en el piso cubierto de cadenas, una advertencia
+apresuradamente garabateada sobre la portada: “quien borra memorias, crea mentiras”.</p>
+
+<p>Dante buscó apresuradamente en su cinturón hasta encontrar el cuchillo de combate que siempre
+tenía a mano y lo usó para forzar el candado, con lo que logró abrir el libro, este narraba su propia
+vida ilustrada con fotos que parecían extraídas de sus recuerdos, avanzó hasta el capítulo de la
+masacre de Lerna y arrancó las páginas con toda la fuerza de su ser. A su espalda un grito agudo se
+escuchó en dirección de la sala de los retratos y Dante despertó.</p>
+
+<p>Abrió y cerró los ojos varias veces para asegurarse de que estaba realmente despierto, su casa
+mostraba abundantes daños en la estructura y había desaparecido parte del mobiliario, abrió el
+destartalado armario para vestirse encontrando que su uniforme militar había desaparecido
+también, al igual que el diario de guerra y la placa de identificación.</p>
+
+<p>Fuera del pequeño apartamento la ciudad parecía estar apenas recuperándose de varios
+bombardeos y de golpe Dante entendió la advertencia.</p>
+
+<p>Esa noche entró de nuevo a los registros dispuesto a encontrar una solución, la sala de los retratos
+había cambiado y ahora las pinturas mostraban a varios de sus conocidos, gente de su ciudad,
+amigos de infancia, todos con la misma mirada de angustia. Entró por una de las puertas, esta vez
+los paisajes que guiaban el camino eran de su propia ciudad, desesperado Dante cayó de rodillas
+solo para encontrar una frase escrita sobre un trozo de papel en la contraportada de un libro,
+decía “la muerte se detendrá cuando se alcance el equilibrio”. Rápidamente dio la vuelta al libroencuadernado en cuero sencillo con letras doradas en la portada “Índice de los condenados” las
+páginas eran una compilación de personas que habían usado la biblioteca para cometer crímenes,
+Dante pasó página tras página de nombres tachados y emborronados hasta que llegó a uno
+legible: “Valeria Sinisterra: Modifica la realidad para beneficio propio. Culpa acumulada: 89 vidas
+arruinadas.”.</p>
+
+<p>Cerrando el libro Dante asintió, aceptando la misión que la biblioteca le encomendaba, a su
+derecha una puerta se abrió, dejando ver una sala cuyas paredes parecían cubiertas de alquitrán,
+en ella una mujer tomaba un libro antes de salir por la puerta en la pared opuesta, sus ojos
+brillaban con codicia. Dante se apresuró a seguirla.</p>
+
+  </div>
+
+  <!-- Bloque 3 · enlace a “La sala de los espejos” -->
+  <div class="character-block link">
+    <a href="/la-sala-de-los-espejos/">
+      ↪︎ Entrar en <strong>La sala de los espejos</strong>
+    </a>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+      © 2025 – Web de Narrativa
+    </footer>
+
+    <!--  ⬇️ nuevo script light-box  -->
+    <script src="/assets/js/lightbox.js"></script>
+  </body>
+</html>

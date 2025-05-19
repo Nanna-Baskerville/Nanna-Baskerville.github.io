@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<!-- === visor del PDF ==================================================== -->
+<section class="pdf-container">
+  <article class="pdf-card">
+    <h2>Entrega final del semestre</h2>
+
+    <object
+      data="{{ page.pdf_file | relative_url }}"
+      type="application/pdf"
+      width="100%"
+      height="600">
+      <p>
+        Tu navegador no puede mostrar el PDF.
+        <a href="{{ page.pdf_file | relative_url }}">Descárgalo aquí.</a>
+      </p>
+    </object>
+  </article>
+</section>
+
+<!-- === tarjetas de recomendación (opcionales) =========================== -->
+{% if page.recomendaciones %}
+<section class="recommendations">
+  {% for r in page.recomendaciones %}
+    <article class="rec-card">
+      <img src="{{ r.img | relative_url }}" alt="">
+      <p>{{ r.texto }}</p>
+    </article>
+  {% endfor %}
+</section>
+{% endif %}
+
+<!-- === tarjetas de vídeo (opcionales) =================================== -->
+{% if page.videos %}
+<section class="videos">
+  {% for v in page.videos %}
+    <article class="video-card">
+      <iframe
+        src="{{ v }}"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </article>
+  {% endfor %}
+</section>
+{% endif %}

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Leonora – Crónicas Aquerianas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav">
+  <!-- botón hamburguesa (solo se muestra en móviles) -->
+  <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">☰</button>
+
+  <ul id="navList">
+    
+      <li><a href="/prologo/">Prólogo</a></li>
+    
+      <li><a href="/perfiles/">Perfiles</a></li>
+    
+      <li><a href="/galeria/">Galería</a></li>
+    
+      <li><a href="/extras/">Extras</a></li>
+    
+  </ul>
+
+  <!-- interruptor claro/oscuro -->
+  <button id="themeToggle" aria-label="Cambiar tema">Tema: 🌓</button>
+</nav>
+
+<script>
+  // menú responsive
+  document.getElementById('navToggle')
+          .addEventListener('click', () =>
+             document.getElementById('navList').classList.toggle('open'));
+  // claro / oscuro persistente
+  const html = document.documentElement;
+  const saved = localStorage.getItem('theme');
+  if (saved) html.dataset.theme = saved;
+  document.getElementById('themeToggle').onclick = () => {
+    html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', html.dataset.theme);
+  };
+</script>
+
+    </header>
+
+    <main class="site-main">
+      <section class="character leonora_">
+  <!-- Bloque 1 · título + frase -->
+  <div class="character-block name">
+    <h1>Leonora</h1>
+    
+      <blockquote>El caos es solo un patrón que aún no se ha descifrado.</blockquote>
+    
+  </div>
+
+  <!-- Bloque 2 · texto (cuerpo en Markdown o include) -->
+  <div class="character-block text">
+    <p>Para Leonora los Registros Aquerianos no eran un sueño, eran su sueño. Cada sala, cada libro,
+cada movimiento eran perfectos y parecían encajar en una estructura que nadie más percibía. Los
+colores de los libros, su disposición sobre las mesas y estanterías, las texturas de las paredes y
+hasta el polvo que se acumulaba en algunos rincones eran un lenguaje que solo ella comprendía.</p>
+
+<p>Llevaba entrando en la biblioteca cada noche desde hace tanto tiempo que ya no recordaba bien
+haber tenido alguna vez un sueño diferente, llevaba siempre en sus manos un cuaderno de piel
+plateada en la que anotaba todos sus hallazgos y en cuya primera página resaltaba un papel de
+bordes dorados que detallaba las reglas o más bien instrucciones de la biblioteca.</p>
+
+<p>Entrar en la biblioteca era su momento favorito del día, en ese lugar podía ser ella misma, leer sin pausa o explorar una tras otra las cambiantes salas sin que nada ni nadie la detuviera. Su primer objetivo fue entender la distribución de los libros y luego el patrón de las salas; su esfuerzo
+dio frutos cuando llegó al fin a la sala de los mapas, donde decenas de esquemas confirmaban los
+patrones que había supuesto. Tras entender cómo moverse, el Cronista fue lo siguiente: en su
+imaginación, una criatura capaz de crear y administrar un lugar tan maravilloso como aquel no
+podía ser terrible en absoluto; Leonora estaba segura de que quienquiera que fuese la entendería
+como ella entendía los registros y soñaba con el momento en que por fin se conocieran.</p>
+
+<p>La primera oportunidad que encontró para ello ocurrió una noche en que notó que un libro sobre
+Historia contemporánea se encontraba en la mesa equivocada. Al abrirlo, encontró una fecha
+tachada y unas palabras escritas nerviosamente. El dolor que sintió al observar la modificación
+solo fue equiparable a la emoción de ver aparecer al Cronista, por lo que esperó toda la noche en
+esa sala y, aunque nada ocurrió, se dijo a sí misma que tal vez el Cronista había aparecido frente al
+culpable; por eso se propuso seguir de cerca a quien rompiera las reglas la próxima vez.</p>
+
+<p>No pasaron muchas noches antes de que encontrara al siguiente infractor: se trataba de una
+mujer alta, vestida de forma elegante, que se dedicaba a reescribir en los libros mientras una
+sonrisa codiciosa le iluminaba el rostro. Leonora la observaba desde las sombras con una mezcla
+de odio y emoción, anticipando el momento en que apareciera por fin el Cronista. Pero las
+noches pasaban y nadie aparecía; la mujer rompía las reglas de forma impune y la mezcla de
+impaciencia y desesperación se apoderaba de Leonora.</p>
+
+<p>Esa mujer, Valeria Sinisterra —cuyo nombre había descubierto en los tomos modificados y luego
+nuevamente en la sala de las biografías— era una invasora que alteraba el perfecto orden y
+equilibrio de la biblioteca. Debía ser castigada, pensaba Leonora, y si el Cronista no lo hacía,
+alguien más debía hacerlo: otro intruso, Dante, un ex-militar cuya culpa lo había llevado a cometer
+un error fatal, era la herramienta perfecta.</p>
+
+<p>Leonora lo había seguido un tiempo también, estudiando sus actos y sus acciones frente a los
+retratos y los libros de la guerra. Manipular a un hombre como él, entrenado para recibir órdenes
+y ansioso de redimirse, no sería difícil. Leonora sabía lo que tenía que hacer: en sus manos sostenía
+el “Índice de los condenados”; sería fácil dejarlo al alcance de Dante, pero eso sería romper una
+regla y no pudo evitar dudar.</p>
+
+<p>Nunca supo si fue su imaginación o si ocurrió realmente, pero una especie de soplo cálido pareció
+emanar del libro entre sus dedos, en dirección a la sala de los retratos. Leonora miró al frente y la
+puerta se abrió. No dudó más.</p>
+
+  </div>
+
+  <!-- Bloque 3 · enlace a “La sala de los espejos” -->
+  <div class="character-block link">
+    <a href="/la-sala-de-los-espejos/">
+      ↪︎ Entrar en <strong>La sala de los espejos</strong>
+    </a>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+      © 2025 – Web de Narrativa
+    </footer>
+
+    <!--  ⬇️ nuevo script light-box  -->
+    <script src="/assets/js/lightbox.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Trabajos del semestre — Walter Arias Florez – Crónicas Aquerianas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav">
+  <!-- botón hamburguesa (solo se muestra en móviles) -->
+  <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">☰</button>
+
+  <ul id="navList">
+    
+      <li><a href="/prologo/">Prólogo</a></li>
+    
+      <li><a href="/perfiles/">Perfiles</a></li>
+    
+      <li><a href="/galeria/">Galería</a></li>
+    
+      <li><a href="/extras/">Extras</a></li>
+    
+  </ul>
+
+  <!-- interruptor claro/oscuro -->
+  <button id="themeToggle" aria-label="Cambiar tema">Tema: 🌓</button>
+</nav>
+
+<script>
+  // menú responsive
+  document.getElementById('navToggle')
+          .addEventListener('click', () =>
+             document.getElementById('navList').classList.toggle('open'));
+  // claro / oscuro persistente
+  const html = document.documentElement;
+  const saved = localStorage.getItem('theme');
+  if (saved) html.dataset.theme = saved;
+  document.getElementById('themeToggle').onclick = () => {
+    html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', html.dataset.theme);
+  };
+</script>
+
+    </header>
+
+    <main class="site-main">
+      <h1>Trabajos del semestre — Walter Arias Florez</h1>
+
+<!-- === visor del PDF ==================================================== -->
+<section class="pdf-container">
+  <article class="pdf-card">
+    <h2>Entrega final del semestre</h2>
+
+    <object
+      data="/docs/Walter.pdf"
+      type="application/pdf"
+      width="100%"
+      height="600">
+      <p>
+        Tu navegador no puede mostrar el PDF.
+        <a href="/docs/Walter.pdf">Descárgalo aquí.</a>
+      </p>
+    </object>
+  </article>
+</section>
+
+<!-- === tarjetas de recomendación (opcionales) =========================== -->
+
+<section class="recommendations">
+  
+    <article class="rec-card">
+      <img src="/images/recs/sonata.png" alt="">
+      <p>Sonata Arctica es una banda finlandesa de power metal melódico[1]​[2]​ formada en Kemi en 1996 bajo el nombre Tricky Beans, que después cambió a Tricky Means, y finalmente a Sonata Arctica en 1999. Su cantante Tony Kakko ha comentado influencias de bandas de metal como Stratovarius, Children of Bodom, Nightwish, Rhapsody of Fire, Helloween, entre otras citadas por el grupo en diversas entrevistas.</p>
+    </article>
+  
+</section>
+
+
+<!-- === tarjetas de vídeo (opcionales) =================================== -->
+
+
+    </main>
+
+    <footer class="site-footer">
+      © 2025 – Web de Narrativa
+    </footer>
+
+    <!--  ⬇️ nuevo script light-box  -->
+    <script src="/assets/js/lightbox.js"></script>
+  </body>
+</html>

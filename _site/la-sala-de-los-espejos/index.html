@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>La sala de los espejos – Crónicas Aquerianas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav">
+  <!-- botón hamburguesa (solo se muestra en móviles) -->
+  <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">☰</button>
+
+  <ul id="navList">
+    
+      <li><a href="/prologo/">Prólogo</a></li>
+    
+      <li><a href="/perfiles/">Perfiles</a></li>
+    
+      <li><a href="/galeria/">Galería</a></li>
+    
+      <li><a href="/extras/">Extras</a></li>
+    
+  </ul>
+
+  <!-- interruptor claro/oscuro -->
+  <button id="themeToggle" aria-label="Cambiar tema">Tema: 🌓</button>
+</nav>
+
+<script>
+  // menú responsive
+  document.getElementById('navToggle')
+          .addEventListener('click', () =>
+             document.getElementById('navList').classList.toggle('open'));
+  // claro / oscuro persistente
+  const html = document.documentElement;
+  const saved = localStorage.getItem('theme');
+  if (saved) html.dataset.theme = saved;
+  document.getElementById('themeToggle').onclick = () => {
+    html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', html.dataset.theme);
+  };
+</script>
+
+    </header>
+
+    <main class="site-main">
+      <section class="character la-sala-de-los-espejos">
+  <!-- Bloque 1 · título + frase -->
+  <div class="character-block name">
+    <h1>La sala de los espejos</h1>
+    
+      <blockquote>La realidad alcanza a quien huye de sus actos</blockquote>
+    
+  </div>
+
+  <!-- Bloque 2 · texto (cuerpo en Markdown o include) -->
+  <div class="character-block text">
+    <p>Valeria siguió el mapa hasta la puerta que conducía a la sala hexagonal, sintiéndose perseguida, la
+abrió apresuradamente y entró cerrando la puerta tras sí. La sala en la que estaba no tenía
+ninguna estantería, las paredes estaban ocupadas del piso al techo por espejos siendo la puerta
+por la que había entrado, uno de ellos.</p>
+
+<p>La disposición hexagonal de los espejos distorsionaba la realidad de forma infinita e inquietante,
+pero Valeria solo tenía ojos para el atril ubicado en la mitad de la sala, donde un libro de bordes
+dorados yacía abierto, tenuemente iluminado por la luz de la cúpula superior.</p>
+
+<p>El espejo a sus espaldas volvió a abrirse y Valeria se lanzó hacia el libro, las páginas brillaban con
+letras que no lograba identificar con excepción de una sola palabra: Dante.</p>
+
+<p>Cuando Dante entró a la sala lo primero que vio fue a la mujer abalanzarse al libro central, en los
+espejos, las facciones de ella se veían distorsionadas y grotescas, sus manos como garras,
+aferrando los bordes dorados del libro. Debía deshacerse de ella, su reflejo era el reflejo de su
+verdadero ser, sucio y manipulador bajo su elegante apariencia, sacó el cuchillo del cinturón
+preparado para saltar.</p>
+
+<p>Valeria levantó la mirada para ver al intruso, los espejos a su alrededor reflejaban una silueta
+lobuna con ojos rojos y dientes descarnados, no había duda, el Cronista había llegado por ella,
+pero ahora conocía su verdadero nombre y eso la haría dueña de su voluntad.</p>
+
+<p>-¡Dante! - gritó con voz firme - conozco tu verdadero nombre Cronista, no tienes poder sobre mi.</p>
+
+<p>Dante avanzó con su mirada fija en el objetivo.</p>
+
+<p>-Tu eres quien no tendrá poder de cometer más crímenes- respondió aferrando el cuchillo con
+más fuerza, -Si te elimino, la biblioteca me perdonará y el mundo volverá al equilibrioValeria apretó sus dedos sobre la página del libro justo cuando Dante se preparaba para saltar, las
+palabras se hicieron legibles y las pronunció apresuradamente. Dante se detuvo a medio camino
+temblando, mientras una fuerza desconocida lo obligaba a bajar el arma.</p>
+
+<ul>
+  <li>Muere- Ordenó Valeria fríamente - ¡Y que tu muerte me devuelva mi vida! -</li>
+</ul>
+
+<p>Dante sintió su propia mano clavando el cuchillo en su pecho, rugió con una mezcla de odio e ironía, pero logró detenerla a tiempo.</p>
+
+<ul>
+  <li>No me creas tan débil - logró susurrar antes de cerrar los ojos, mientras la mancha de sangre de
+su camisa se expandía.</li>
+</ul>
+
+<p>Pero Valeria no la escuchaba, la tinta de las palabras subía por sus manos cuya piel empezó a
+deshacerse como papel mojado, grito con dolor y terror mientras dejaba caer el libro.</p>
+
+<p>Leonora salió de la puerta - espejo detrás del atril, la biblioteca la había guiado a ese lugar, entró
+justo a tiempo para presenciar el espectáculo de los dos intrusos quienes ocupados en atacarse el
+uno al otro no repararon en su presencia. Metódicamente, con pasos rítmicos que resonaban en la
+cúpula Leonora se acercó hasta recoger el libro que Valeria había dejado caer mientras se
+inclinaba sobre los restos de sus manos consumidas.</p>
+
+<p>Valeria levantó la vista en ese momento pero Leonora simplemente dio un paso hacia un lado, el
+libro que sostenía en sus manos estaba en blanco con excepción de una sola frase: ¿Quién eres?.</p>
+
+<p>Dante abrió los ojos en ese momento, frente a él Valeria yacía en el piso sollozando y una mujer
+desconocida volvía a colocar el libro en el atril, casi con reverencia. Tomando fuerza de donde no
+había se puso de pie y aferrando el cuchillo nuevamente se apresuró a acabar con ambas y salir
+cuanto antes de ese lugar maldito.</p>
+
+<p>Leonora lo miró levantarse sin miedo, ahora entendía todo, buscó un lapicero en su bolsillo y
+escribió en el libro con perfecta caligrafía “Yo soy la cronista”.</p>
+
+<p>La sala se iluminó por un instante nublando toda visión, cuando volvió a la normalidad, Dante miró
+con horror como los espejos reflejaban un vacío sin nombre en el lugar donde Leonora
+permanencia frente al libro, su contorno parecía absorber toda luz y en el centro sus ojos brillaban
+con llamas insondables.</p>
+
+<p>-Ustedes rompieron las reglas- Anunció la Cronista pausadamente - Ahora, volverán al equilibrio.</p>
+
+<p>Valeria gritó e intentó levantarse para huir, pero su imagen fue capturada por uno de los espejos
+que lentamente se transformó en un retrato de tinta, de una mujer que parecía haber sido
+hermosa pero cuyas facciones se encontraban retorcidas por un espasmo de terror mientras sus
+manos aparecían siendo devoradas por insectos de tinta “ambición devoradora” decía la placa al
+pie.</p>
+
+<p>Dante por su parte intentó atacar, pero fue capturado también, su retrato, nombrado “el que
+sigue órdenes” lo mostraba corriendo en un campo de batalla, huyendo aterrorizado de las
+sombras de sus víctimas.</p>
+
+  </div>
+
+  <!-- Bloque 3 · enlace a “La sala de los espejos” -->
+  <div class="character-block link">
+    <a href="/prologo/">
+      ↪︎ Volver al <strong>Prólogo</strong>
+    </a>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+      © 2025 – Web de Narrativa
+    </footer>
+
+    <!--  ⬇️ nuevo script light-box  -->
+    <script src="/assets/js/lightbox.js"></script>
+  </body>
+</html>

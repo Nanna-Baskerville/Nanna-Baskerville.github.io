@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Prólogo – Crónicas Aquerianas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav">
+  <!-- botón hamburguesa (solo se muestra en móviles) -->
+  <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">☰</button>
+
+  <ul id="navList">
+    
+      <li><a href="/prologo/">Prólogo</a></li>
+    
+      <li><a href="/perfiles/">Perfiles</a></li>
+    
+      <li><a href="/galeria/">Galería</a></li>
+    
+      <li><a href="/extras/">Extras</a></li>
+    
+  </ul>
+
+  <!-- interruptor claro/oscuro -->
+  <button id="themeToggle" aria-label="Cambiar tema">Tema: 🌓</button>
+</nav>
+
+<script>
+  // menú responsive
+  document.getElementById('navToggle')
+          .addEventListener('click', () =>
+             document.getElementById('navList').classList.toggle('open'));
+  // claro / oscuro persistente
+  const html = document.documentElement;
+  const saved = localStorage.getItem('theme');
+  if (saved) html.dataset.theme = saved;
+  document.getElementById('themeToggle').onclick = () => {
+    html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', html.dataset.theme);
+  };
+</script>
+
+    </header>
+
+    <main class="site-main">
+      <!-- Prólogo dentro de una tarjeta -->
+<section class="prologue">
+  <article class="prologue-block">
+    <!-- Prológo en tres bloques -->
+<section class="prologue">
+  <!-- Bloque 1 — introducción -->
+  <div class="prologue-block intro">
+    <p>
+No hay nada que no pueda encontrarse en los registros Aquerianos. Todos los hechos que han
+ocurrido y todos los que están ocurriendo ocupan volúmenes y volúmenes distribuidos en salas
+incontables. Quien accede a ellos tal vez entre a través de un jardín circular rodeado de pórticos
+cuyos arcos se apoyan en columnas de mármol, justo enfrente, al cruzar la puerta más grande
+encontrará una sala de forma rectangular, con dos mesas alargadas dispuestas en el centro,
+cubiertas de ordenadas pilas de libros e iluminada por 2 grandes candelabros y una chimenea al
+fondo de la habitación. Todo el resto de las paredes exceptuando 3 puertas en la pared de
+enfrente está cubierto de más estanterías. Podrá entonces explorar esa sala o adentrarse en la
+biblioteca por cualquiera de las puertas del frente.
+Quienes no entran por el jardín, suelen hacerlo por la sala de los retratos, una sala ocupada
+mayormente por una gran escalera de madera tallada en forma de caracol que conduce a los pisos
+superiores, con puertas ubicadas a intervalos comunes y retratos ocupando la mayor parte de las
+paredes. Podrá entonces explorar esa sala (aunque no recomiendo observar los retratos durante
+demasiado tiempo) o adentrarse en la biblioteca a través de cualquiera de las puertas que rodean
+la escalera.
+Podría pasar más tiempo describiendo otras de las salas, pero sería inútil, dado que la biblioteca se
+expande y sus salas cambian de forma caprichosa, con lo que nunca una visita se parece a la
+anterior.
+Tal vez sería más sabio de mi parte y más útil para el lector, centrarme en las reglas del lugar.  
+    </p>
+  </div>
+</section>
+
+  </article>
+</section>
+<section class="prologue">
+  <article class="prologue-block">
+    <!-- Prológo en tres bloques -->
+<section class="prologue">
+  <!-- Bloque 2 — lista de propósitos -->
+  <div class="prologue-block goals">
+    <ol>
+      <li>Los Registros Aquerianos existen fuera del espacio y tiempo convencionales, los mortales
+que son convocados a ellos llegan en sueños, a quienes logren entrar se les ofrecerá un
+camino, aquellos que se aparten de él corren el riesgo de no regresar.</li>
+      <li>El convocado puede explorar las salas por las que lo lleve su camino, pero bajo ningún
+motivo debe abrir los tomos que llevan su nombre.</li>
+      <li>Si algún libro no se abre fácilmente no debe forzarse.</li>
+      <li>No todas las palabras que contienen los libros son para todos los observadores, toda
+información debe tomarse con precaución.</li>
+      <li>Ningún tomo debe modificarse.</li>
+      <li>Ningún tomo debe cambiarse de lugar.</li>
+    </ol>
+  </div>
+
+</section>
+
+  </article>
+</section>
+<section class="prologue">
+  <article class="prologue-block">
+    <!-- Prológo en tres bloques -->
+<section class="prologue">
+  <!-- Bloque 3 — cierre -->
+  <div class="prologue-block closing">
+    <p>
+      Quienes no sigan estas reglas enfrentarán el juicio del Cronista. Nadie que haya enfrentado su
+justicia ha sobrevivido para contarlo, pero si la expresión de terror profundo de sus rostros inertes
+es algún testimonio, que sirva de advertencia para todo el que piense desobedecer.
+    </p>
+  </div>
+
+</section>
+
+  </article>
+</section>
+<!-- Tarjetas de Valeria, Leonora y Dante -->
+<section class="people-row">
+  <article class="person-card">
+    <a href="/valeria_/">Valeria</a>
+  </article>
+
+  <article class="person-card">
+    <a href="/leonora_/">Leonora</a>
+  </article>
+
+  <article class="person-card">
+    <a href="/dante_/">Dante</a>
+  </article>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+      © 2025 – Web de Narrativa
+    </footer>
+
+    <!--  ⬇️ nuevo script light-box  -->
+    <script src="/assets/js/lightbox.js"></script>
+  </body>
+</html>

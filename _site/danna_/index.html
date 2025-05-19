@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Trabajos del semestre — Danna Caballero – Crónicas Aquerianas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav">
+  <!-- botón hamburguesa (solo se muestra en móviles) -->
+  <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">☰</button>
+
+  <ul id="navList">
+    
+      <li><a href="/prologo/">Prólogo</a></li>
+    
+      <li><a href="/perfiles/">Perfiles</a></li>
+    
+      <li><a href="/galeria/">Galería</a></li>
+    
+      <li><a href="/extras/">Extras</a></li>
+    
+  </ul>
+
+  <!-- interruptor claro/oscuro -->
+  <button id="themeToggle" aria-label="Cambiar tema">Tema: 🌓</button>
+</nav>
+
+<script>
+  // menú responsive
+  document.getElementById('navToggle')
+          .addEventListener('click', () =>
+             document.getElementById('navList').classList.toggle('open'));
+  // claro / oscuro persistente
+  const html = document.documentElement;
+  const saved = localStorage.getItem('theme');
+  if (saved) html.dataset.theme = saved;
+  document.getElementById('themeToggle').onclick = () => {
+    html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', html.dataset.theme);
+  };
+</script>
+
+    </header>
+
+    <main class="site-main">
+      <h1>Trabajos del semestre — Danna Caballero</h1>
+
+<!-- === visor del PDF ==================================================== -->
+<section class="pdf-container">
+  <article class="pdf-card">
+    <h2>Entrega final del semestre</h2>
+
+    <object
+      data="/docs/Danna.pdf"
+      type="application/pdf"
+      width="100%"
+      height="600">
+      <p>
+        Tu navegador no puede mostrar el PDF.
+        <a href="/docs/Danna.pdf">Descárgalo aquí.</a>
+      </p>
+    </object>
+  </article>
+</section>
+
+<!-- === tarjetas de recomendación (opcionales) =========================== -->
+
+<section class="recommendations">
+  
+    <article class="rec-card">
+      <img src="/images/recs/constantine.webp" alt="">
+      <p>Película: Constantine (2005) <Br><Br> Es una película del género thriller de acción, la protagoniza Keanu Reeves y Rachel Weisz. Me parece una película muy entretenida, al igual de que su trama es sumamente profunda, me gustan mucho los temas de mezclar temas fantasiosos con los religiosos, es muy interesante ver cómo temas tan delicados como el suicidio son tratados desde la luz de la religión. <Br>Ha sido mi película favorita desde joven, y recomiendo la vea gente que es amante de la acción, y que le interesan temas religiosos, ya que se toca todo con mucha profundidad. Además resaltar el trabajo de fotografía y actuación de la gente que participó, ya que hace la película mucho más placentera de ver.</p>
+    </article>
+  
+</section>
+
+
+<!-- === tarjetas de vídeo (opcionales) =================================== -->
+
+
+    </main>
+
+    <footer class="site-footer">
+      © 2025 – Web de Narrativa
+    </footer>
+
+    <!--  ⬇️ nuevo script light-box  -->
+    <script src="/assets/js/lightbox.js"></script>
+  </body>
+</html>

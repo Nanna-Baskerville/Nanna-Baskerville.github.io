@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<section class="character {{ page.slug }}">
+  <!-- Bloque 1 · título + frase -->
+  <div class="character-block name">
+    <h1>{{ page.title }}</h1>
+    {% if page.phrase %}
+      <blockquote>{{ page.phrase }}</blockquote>
+    {% endif %}
+  </div>
+
+  <!-- Bloque 2 · texto (cuerpo en Markdown o include) -->
+  <div class="character-block text">
+    {{ content }}
+  </div>
+
+  <!-- Bloque 3 · enlace a “La sala de los espejos” -->
+  <div class="character-block link">
+    <a href="{{ '/la-sala-de-los-espejos/' | relative_url }}">
+      ↪︎ Entrar en <strong>La sala de los espejos</strong>
+    </a>
+  </div>
+</section>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Perfiles – Crónicas Aquerianas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav">
+  <!-- botón hamburguesa (solo se muestra en móviles) -->
+  <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">☰</button>
+
+  <ul id="navList">
+    
+      <li><a href="/prologo/">Prólogo</a></li>
+    
+      <li><a href="/perfiles/">Perfiles</a></li>
+    
+      <li><a href="/galeria/">Galería</a></li>
+    
+      <li><a href="/extras/">Extras</a></li>
+    
+  </ul>
+
+  <!-- interruptor claro/oscuro -->
+  <button id="themeToggle" aria-label="Cambiar tema">Tema: 🌓</button>
+</nav>
+
+<script>
+  // menú responsive
+  document.getElementById('navToggle')
+          .addEventListener('click', () =>
+             document.getElementById('navList').classList.toggle('open'));
+  // claro / oscuro persistente
+  const html = document.documentElement;
+  const saved = localStorage.getItem('theme');
+  if (saved) html.dataset.theme = saved;
+  document.getElementById('themeToggle').onclick = () => {
+    html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', html.dataset.theme);
+  };
+</script>
+
+    </header>
+
+    <main class="site-main">
+      <h1 id="el-dream-team-está-compuesto-por">El Dream Team está compuesto por:</h1>
+
+<section class="profiles">
+  <article class="profile-card">
+    <img src="/images/anna.jpeg" alt="Anna" />
+    <p>Anna Katherine Ruiz Ruales<br /><br /> Nací en Pasto - Colombia, soy Cirujana plástica como mi primera profesión y artista desde el corazón. Encontré mi Ikigai en la fusión del arte y la ciencia, la razón y la emoción. 
+Como lectora amo la literatura fantástica y la novela histórica, mis escritores favoritos son Umberto Eco y Tolkien. 
+Como escritora, procuro crear mundos consistentes, además de dotar a mis personajes e historias de la complejidad de todas las personas que he conocido en el ejercicio de mi profesión, la cual me ha llevado a observar de cerca todas las emociones humanas.
+</p>
+    <a href="/anna_/">Ver más</a>
+  </article>
+
+  <article class="profile-card">
+    <img src="/images/danna.jpeg" alt="Danna" />
+    <p>Danna Michelle Caballero Hernández <br /><br />
+Hola, me llamo Danna, soy estudiante de ingeniería en diseño de entretenimiento digital.
+Tengo 19 años, me gusta dibujar, escuchar música y más que nada estar creando cosas. Soy una persona con muchos hobbies a medias, y si se trata de algo creativo, probablemente haya intentado aprenderlo al menos una vez. 
+No soy mucho de ver series ni películas, ni tampoco juego mucho, pero con lo poco que he visto o jugado, me obsesiono.
+Me gusta mucho estar en contacto con la naturaleza, y los espacios silenciosos, al igual que me gustan los animales de todo tipo.</p>
+    <a href="/danna_/">Ver más</a>
+  </article>
+
+  <article class="profile-card">
+    <img src="/images/walter.jpeg" alt="Walter" />
+    <p>Walter Arias Florez<br /><br />Soy apasionado de los videojuegos con buenas tramas y personajes bien desarrollados. Músico autodidacta. 
+Mi género musical favorito es el Power Metal. Disfruto mucho sus elaboradas melodías y riff potentes, además de las historias fantásticas que se cuentan en cada canción. 
+</p>
+    <a href="/walter_/">Ver más</a>
+  </article>
+
+  <article class="profile-card">
+    <img src="/images/juan.png" alt="Juan" />
+    <p>Juan David Quiroga M. <br /><br /> (Bogotá D.C., 2003) Estudiante de Ingeniería en Diseño de Entretenimiento Digital (IDED) en la UPB. Hábil con los números y le gusta ver la lógica en las cosas; sabe unas cosas y otras sobre programación. Ama jugar videojuegos con narrativas interesantes y mecánicas estratégicas. Sus géneros de libros favoritos son los de fantasía y de thriller. </p>
+    <a href="/juan_/">Ver más</a>
+  </article>
+  <article class="profile-card">
+    <img src="/images/dream.jpg" alt="" />
+    <p>Trabajos en conjunto del Dream Team</p>
+    <a href="/dream_/">Ver más</a>
+  </article>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+      © 2025 – Web de Narrativa
+    </footer>
+
+    <!--  ⬇️ nuevo script light-box  -->
+    <script src="/assets/js/lightbox.js"></script>
+  </body>
+</html>

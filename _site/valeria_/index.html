@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Valeria – Crónicas Aquerianas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav">
+  <!-- botón hamburguesa (solo se muestra en móviles) -->
+  <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">☰</button>
+
+  <ul id="navList">
+    
+      <li><a href="/prologo/">Prólogo</a></li>
+    
+      <li><a href="/perfiles/">Perfiles</a></li>
+    
+      <li><a href="/galeria/">Galería</a></li>
+    
+      <li><a href="/extras/">Extras</a></li>
+    
+  </ul>
+
+  <!-- interruptor claro/oscuro -->
+  <button id="themeToggle" aria-label="Cambiar tema">Tema: 🌓</button>
+</nav>
+
+<script>
+  // menú responsive
+  document.getElementById('navToggle')
+          .addEventListener('click', () =>
+             document.getElementById('navList').classList.toggle('open'));
+  // claro / oscuro persistente
+  const html = document.documentElement;
+  const saved = localStorage.getItem('theme');
+  if (saved) html.dataset.theme = saved;
+  document.getElementById('themeToggle').onclick = () => {
+    html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', html.dataset.theme);
+  };
+</script>
+
+    </header>
+
+    <main class="site-main">
+      <section class="character valeria_">
+  <!-- Bloque 1 · título + frase -->
+  <div class="character-block name">
+    <h1>Valeria</h1>
+    
+      <blockquote>El éxito es para quienes no tienen miedo</blockquote>
+    
+  </div>
+
+  <!-- Bloque 2 · texto (cuerpo en Markdown o include) -->
+  <div class="character-block text">
+    <p>Valeria se arreglaba frente al espejo de su suite, todo a su alrededor mostraba lujo, desde el
+mobiliario elegante hasta el collar de perlas que contrastaba espléndidamente con la seda de su
+vestido.</p>
+
+<p>No recordaba muy bien quién era el anfitrión de la cena de esa noche, pero poco importaba, tarde
+o temprano se acercaría a ella, complaciente y dispuesto no solo a soportar sino a excusar
+activamente cualquier mínimo error que ella pudiera cometer, todo con tal de conseguir un trato,
+una alianza o al menos un gesto de su aprecio. Tal era la magnitud de su poder e influencia.</p>
+
+<p>No siempre había sido así. La primera noche que entró a los Registros Aquerianos Valeria no era
+más que una aspirante, una de tantos en un mundo corporativo demasiado agresivo, pero segura
+de sí misma y dispuesta a llegar a cualquier extremo con el fin de conseguir sus aspiraciones.</p>
+
+<p>Desde el principio dudó de las reglas que encontró en un papel de bordes dorados en la mesa en
+frente de la puerta que conducía al jardín, si decía que toda información debe tomarse con
+cuidado, ¿porque ese texto sería una excepción? Esa noche sin embargo se mantuvo en el camino,
+siguiendo únicamente las habitaciones iluminadas por la luz de las velas, ojeando tomos al azar
+hasta que un nombre escrito en uno de ellos llamó su atención: “Oscar Hernández, heredero y
+diseñador de una marca reconocida, sus astutas decisiones e inversión en mano de obra barata
+por parte de inmigrantes han llevado a su empresa a un crecimiento económico sin precedentes…”
+Frunció el ceño pensando en Oscar, sabía que utilizaba métodos poco éticos, pero no paraba de
+ascender, todo el mundo quería firmar un acuerdo con él. Molesta y antes de pensarlo demasiado
+sacó un lapicero del bolsillo y tachó las palabras “crecimiento económico” escribiendo “quiebra”
+en la parte superior. Rápidamente cerró el volumen respirando apresuradamente, el ruido del
+cierre del libro la hizo despertar, a su alrededor su cuarto estaba como siempre, sin ningún
+Cronista acechando en las sombras, tomó su celular para revisar su correo y las noticias de la
+mañana. La quiebra de Oscar Hernández era la noticia principal.</p>
+
+<p>Las noches siguientes Valeria se arriesgó más y más, las modificaciones se volvieron adictivas, cada
+cambio era un juego: alterar reuniones, silenciar testigos, borrar historias inconvenientes. Valeria
+lentamente daba a su vida la forma que siempre había soñado y el Cronista no parecía querer
+detenerla. Era verdad que algunas cosas también habían cambiado para mal, sus amigos decían no
+conocerla más, su familia se había alejado después de que ella se enojara ante sus reclamos de
+olvidar fechas y sucesos importantes, su novio también se había ido después de que ella pasara
+horas y horas analizando los cambios que haría a continuación.</p>
+
+<p>Dio una última mirada al espejo antes de salir de la suite, nadie la entendía y muy seguramente
+todos la envidiaban, Valeria sabía que a veces el precio del éxito es la soledad y aunque era
+doloroso, eso tampoco la detendría, Tal vez los registros podían arreglar eso también, solo era
+cuestión de buscar lo suficiente.</p>
+
+<p>Esa noche entró a los registros con ese propósito, tras vagar un rato una puerta a oscuras a su
+derecha llamó su atención, ya hace tiempo había aprendido que la biblioteca guiaba a sus usuarios
+a lo que buscaban, así que siguiendo su intuición entró por ella, “sala de los susurros” rezaba un
+letrero por encima de la puerta de enfrente. La sala contenía una sola mesa central y ninguna
+estantería, por el contrario, las paredes parecían de alquitrán, sobre la mesa un libro abierto llamó
+su atención “quien posea el libro de los nombres verdaderos no gobernará sobre países sino sobre
+voluntades” eso era lo que necesitaba para recuperar todo lo que había perdido y ganar aún más.
+En la página de al lado un mapa explicaba cómo llegar al libro de los nombres verdaderos, Valeria
+tomó el libro sin dudarlo y salió de la sala por la puerta que marcaba el mapa. A su izquierda una
+figura se movió entre las sombras.</p>
+
+  </div>
+
+  <!-- Bloque 3 · enlace a “La sala de los espejos” -->
+  <div class="character-block link">
+    <a href="/la-sala-de-los-espejos/">
+      ↪︎ Entrar en <strong>La sala de los espejos</strong>
+    </a>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+      © 2025 – Web de Narrativa
+    </footer>
+
+    <!--  ⬇️ nuevo script light-box  -->
+    <script src="/assets/js/lightbox.js"></script>
+  </body>
+</html>

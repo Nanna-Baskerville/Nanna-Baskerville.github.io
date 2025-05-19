@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Agradecimientos – Crónicas Aquerianas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav">
+  <!-- botón hamburguesa (solo se muestra en móviles) -->
+  <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">☰</button>
+
+  <ul id="navList">
+    
+      <li><a href="/prologo/">Prólogo</a></li>
+    
+      <li><a href="/perfiles/">Perfiles</a></li>
+    
+      <li><a href="/galeria/">Galería</a></li>
+    
+      <li><a href="/extras/">Extras</a></li>
+    
+  </ul>
+
+  <!-- interruptor claro/oscuro -->
+  <button id="themeToggle" aria-label="Cambiar tema">Tema: 🌓</button>
+</nav>
+
+<script>
+  // menú responsive
+  document.getElementById('navToggle')
+          .addEventListener('click', () =>
+             document.getElementById('navList').classList.toggle('open'));
+  // claro / oscuro persistente
+  const html = document.documentElement;
+  const saved = localStorage.getItem('theme');
+  if (saved) html.dataset.theme = saved;
+  document.getElementById('themeToggle').onclick = () => {
+    html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', html.dataset.theme);
+  };
+</script>
+
+    </header>
+
+    <main class="site-main">
+      <section class="profiles"><!-- reutiliza el grid y las tarjetas ya existentes -->
+  <article class="profile-card">
+    <h2>Anna Katherine Ruiz</h2>
+    <p>
+      Gracias a quienes me enseñaron que el error también es camino:
+      su paciencia y su fe me devolvieron la brújula.
+    </p>
+  </article>
+
+  <article class="profile-card">
+    <h2>Walter Arias</h2>
+    <p>
+      A la Biblioteca de los Sueños y a los que velan sus pasillos: sin
+      su silencio y su luz, estas páginas estarían vacías.
+    </p>
+  </article>
+
+  <article class="profile-card">
+    <h2>Danna Caballero</h2>
+    <p>
+      A mis cómplices de tinta, que con risas y café encontraron el modo
+      de ordenar mi caos. Sin ustedes nada tendría sentido.
+    </p>
+  </article>
+
+  <article class="profile-card">
+    <h2>Juan D. Quiroga</h2>
+    <p>
+      Le agradezco mucho la ayuda que he recibido de mis compañeros de la carrera en las diferentes clases de este semestre, trabajando en conjunto en cada proyecto que hemos recibido. No sé cómo hubiera podido haberlos realizado sin ellos. También a mis papás por ayudarme con los gastos necesarios para poder estudiar tranquilo en la universidad.
+    </p>
+  </article>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+      © 2025 – Web de Narrativa
+    </footer>
+
+    <!--  ⬇️ nuevo script light-box  -->
+    <script src="/assets/js/lightbox.js"></script>
+  </body>
+</html>
