@@ -1,0 +1,24 @@
+title: "Crónicas Aquerianas"
+description: "Pagina para el curso de Narrativa Literaria e Hipertextualidad"
+baseurl: ""
+url: ""
+markdown: kramdown
+
+collections:
+  pages:
+    output: true
+    permalink: /:name/     
+
+header_pages:
+  - _pages/prologo.md
+  - _pages/perfiles.md
+  - _pages/galeria.md
+  - _pages/extras.md
+
+defaults:
+  - scope:
+      path: "_pages"
+      # type: pages   # opcional, Jekyll infiere el tipo
+    values:
+      layout: default
+      # permalink: "/:name/"   
