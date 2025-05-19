@@ -1,0 +1,19 @@
+<!-- Prológo en tres bloques -->
+<section class="prologue">
+  <!-- Bloque 2 — lista de propósitos -->
+  <div class="prologue-block goals">
+    <ol>
+      <li>Los Registros Aquerianos existen fuera del espacio y tiempo convencionales, los mortales
+que son convocados a ellos llegan en sueños, a quienes logren entrar se les ofrecerá un
+camino, aquellos que se aparten de él corren el riesgo de no regresar.</li>
+      <li>El convocado puede explorar las salas por las que lo lleve su camino, pero bajo ningún
+motivo debe abrir los tomos que llevan su nombre.</li>
+      <li>Si algún libro no se abre fácilmente no debe forzarse.</li>
+      <li>No todas las palabras que contienen los libros son para todos los observadores, toda
+información debe tomarse con precaución.</li>
+      <li>Ningún tomo debe modificarse.</li>
+      <li>Ningún tomo debe cambiarse de lugar.</li>
+    </ol>
+  </div>
+
+</section>

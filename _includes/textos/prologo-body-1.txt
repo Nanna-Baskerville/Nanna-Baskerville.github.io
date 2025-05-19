@@ -1,0 +1,27 @@
+<!-- Prológo en tres bloques -->
+<section class="prologue">
+  <!-- Bloque 1 — introducción -->
+  <div class="prologue-block intro">
+    <p>
+No hay nada que no pueda encontrarse en los registros Aquerianos. Todos los hechos que han
+ocurrido y todos los que están ocurriendo ocupan volúmenes y volúmenes distribuidos en salas
+incontables. Quien accede a ellos tal vez entre a través de un jardín circular rodeado de pórticos
+cuyos arcos se apoyan en columnas de mármol, justo enfrente, al cruzar la puerta más grande
+encontrará una sala de forma rectangular, con dos mesas alargadas dispuestas en el centro,
+cubiertas de ordenadas pilas de libros e iluminada por 2 grandes candelabros y una chimenea al
+fondo de la habitación. Todo el resto de las paredes exceptuando 3 puertas en la pared de
+enfrente está cubierto de más estanterías. Podrá entonces explorar esa sala o adentrarse en la
+biblioteca por cualquiera de las puertas del frente.
+Quienes no entran por el jardín, suelen hacerlo por la sala de los retratos, una sala ocupada
+mayormente por una gran escalera de madera tallada en forma de caracol que conduce a los pisos
+superiores, con puertas ubicadas a intervalos comunes y retratos ocupando la mayor parte de las
+paredes. Podrá entonces explorar esa sala (aunque no recomiendo observar los retratos durante
+demasiado tiempo) o adentrarse en la biblioteca a través de cualquiera de las puertas que rodean
+la escalera.
+Podría pasar más tiempo describiendo otras de las salas, pero sería inútil, dado que la biblioteca se
+expande y sus salas cambian de forma caprichosa, con lo que nunca una visita se parece a la
+anterior.
+Tal vez sería más sabio de mi parte y más útil para el lector, centrarme en las reglas del lugar.  
+    </p>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+<!-- Prológo en tres bloques -->
+<section class="prologue">
+  <!-- Bloque 3 — cierre -->
+  <div class="prologue-block closing">
+    <p>
+      Quienes no sigan estas reglas enfrentarán el juicio del Cronista. Nadie que haya enfrentado su
+justicia ha sobrevivido para contarlo, pero si la expresión de terror profundo de sus rostros inertes
+es algún testimonio, que sirva de advertencia para todo el que piense desobedecer.
+    </p>
+  </div>
+
+</section>
