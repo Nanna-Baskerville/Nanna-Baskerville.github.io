@@ -16,16 +16,7 @@ layout: default
   <article class="profile-card">
     <h2>Walter Arias</h2>
     <p>
-      A la Biblioteca de los Sueños y a los que velan sus pasillos: sin
-      su silencio y su luz, estas páginas estarían vacías.
-    </p>
-  </article>
-
-  <article class="profile-card">
-    <h2>Danna Caballero</h2>
-    <p>
-      A mis cómplices de tinta, que con risas y café encontraron el modo
-      de ordenar mi caos. Sin ustedes nada tendría sentido.
+      Quiero agradecer a todos los docentes que me han dado las herramientas para llegar donde estoy el día de hoy. 
     </p>
   </article>
 

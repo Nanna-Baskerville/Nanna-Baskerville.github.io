@@ -1,6 +1,14 @@
 - title: "Prólogo"
   url: "/prologo/"
+
 - title: "Perfiles"
   url: "/perfiles/"
+
 - title: "Galería"
   url: "/galeria/"
+
+- title: "Agradecimientos"
+  url: "/agradecimientos/"
+
+- title: "Extras"           # ← vuelve al menú principal
+  url: "/extras/"
