@@ -1,3 +1,4 @@
+
 /* ===== variables y modo claro/oscuro =================== */
 :root{
   --bg:#ffffff;
@@ -23,12 +24,17 @@ body{
   line-height:1.6;
   padding:0 1rem;
 }
+
+/* 👆 MOD — más aire tras cada párrafo globalmente */
+p{ margin-bottom:1.5rem; }
+/* fin MOD */
+
 h1,h2{font-size:var(--step-1);}
 
 /* ===== cabecera y nav =================================== */
 .site-header{
   background:var(--header);
-  padding:1rem 0;
+  padding:1rem 2rem;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -241,9 +247,7 @@ h1,h2{font-size:var(--step-1);}
   border-radius:.75rem;
 }
 
-/* ========================================================= */
-/* ===  NUEVO · BLOQUES DE PERSONAJE (layout persona)    === */
-/* ========================================================= */
+/* ===== bloques de personaje ============================= */
 .character{
   margin-top:1.5rem;
   display:flex;
@@ -274,17 +278,7 @@ h1,h2{font-size:var(--step-1);}
   transition:background .2s ease,color .2s ease;
 }
 
-/* ===== pie de página ==================================== */
-.site-footer{
-  text-align:center;
-  margin:2rem 0;
-  font-size:.875rem;
-  color:var(--fg);
-}
-
-/* ========================================================= */
-/* ===  LIGHT-BOX (imagen ampliada)                       === */
-/* ========================================================= */
+/* ===== light-box overlay ================================ */
 .lightbox-overlay{
   position:fixed;
   inset:0;
@@ -307,4 +301,12 @@ h1,h2{font-size:var(--step-1);}
   border-radius:1rem;
   box-shadow:0 4px 14px rgba(0,0,0,.4);
   cursor:zoom-out;
+}
+
+/* ===== pie de página ==================================== */
+.site-footer{
+  text-align:center;
+  margin:2rem 0;
+  font-size:.875rem;
+  color:var(--fg);
 }
