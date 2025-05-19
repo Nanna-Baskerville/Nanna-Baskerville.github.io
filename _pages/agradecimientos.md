@@ -5,13 +5,6 @@ layout: default
 ---
 
 <section class="profiles"><!-- reutiliza el grid y las tarjetas ya existentes -->
-  <article class="profile-card">
-    <h2>Anna Katherine Ruiz</h2>
-    <p>
-      Gracias a quienes me enseñaron que el error también es camino:
-      su paciencia y su fe me devolvieron la brújula.
-    </p>
-  </article>
 
   <article class="profile-card">
     <h2>Walter Arias</h2>
